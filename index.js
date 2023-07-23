@@ -33,6 +33,16 @@ const questions = [
     name: "projLicense",
     choices: ["Apache 2.0", "GNU GPL v3", "MIT", "BSD-3"],
   },
+  {
+    type: "input",
+    message: "Please enter your Github username",
+    name: "projUsername",
+  },
+  {
+    type: "input",
+    message: "Please enter your email",
+    name: "projEmail",
+  },
 ];
 
 // TODO: Create a function to write README file
