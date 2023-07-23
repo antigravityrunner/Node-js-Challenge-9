@@ -33,7 +33,7 @@ function generateMarkdown(data) {
 ${renderLicenseBadge(data.projLicense)} \n\n
 ${data.projDescription} \n\n\n
 ${renderTableOfContents()} \n\n
-${data.projUsername} \n\n
+[${data.projUsername}](https://github.com/${data.projUsername}) \n\n
 ${data.projEmail} \n\n
 ## License
 `;
