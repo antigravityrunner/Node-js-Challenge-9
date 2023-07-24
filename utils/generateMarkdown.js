@@ -74,22 +74,32 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
 }
 
 function renderTableOfContents() {
-  return `THIS SHOULD BE A TABLE OF CONTENTS`;
+  return `
+  ## Table of contents
+
+  - Requirements
+  - Recommended modules
+  - Installation
+  - Configuration
+  - Troubleshooting
+  - FAQ
+  - Maintainers`;
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
 # ${data.projName}
-${renderLicenseBadge(data.projLicense)} \n\n
-${data.projDescription} \n\n\n
-${renderTableOfContents()} \n\n
+${renderLicenseBadge(data.projLicense)}
+${data.projDescription}
+## Table of Contents
+${renderTableOfContents()}
 ## License
 ${renderLicenseSection(data.projLicense)}
 
-## Contact
-Github: [${data.projUsername}](https://github.com/${data.projUsername}) \n\n
-Email: ${data.projEmail} \n\n
+## Questions
+Github: [${data.projUsername}](https://github.com/${data.projUsername}) 
+Email: ${data.projEmail} 
 
 `;
 }
