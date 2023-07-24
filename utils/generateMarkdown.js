@@ -92,7 +92,6 @@ function generateMarkdown(data) {
 # ${data.projName}
 ${renderLicenseBadge(data.projLicense)}
 ${data.projDescription}
-## Table of Contents
 ${renderTableOfContents()}
 ## License
 ${renderLicenseSection(data.projLicense)}
