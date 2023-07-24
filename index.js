@@ -28,6 +28,12 @@ const questions = [
     name: "projUsage",
   },
   {
+    type: "input",
+    message: "How do i test the project?",
+    name: "projTests",
+  },
+  
+  {
     type: "list",
     message: "Choose a License",
     name: "projLicense",

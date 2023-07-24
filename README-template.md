@@ -9,14 +9,15 @@ Read.me GEN
 
 ## Table of contents
 
-- Requirements
-- Recommended modules
-- Installation
-- Configuration
-- Troubleshooting
-- FAQ
-- Maintainers
+ -Installation
+ -Usage
+ -License
+ -Contributing
+ -Tests
+ -Questions
 
+
+## Installation
 
 ## License
 

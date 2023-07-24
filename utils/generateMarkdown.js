@@ -77,13 +77,46 @@ function renderTableOfContents() {
   return `
   ## Table of contents
 
-  - Requirements
-  - Recommended modules
-  - Installation
-  - Configuration
-  - Troubleshooting
-  - FAQ
-  - Maintainers`;
+  - [Installation](#installations)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+
+  `;
+}
+
+function generateInstalltion(installString) {
+  return `
+  ## Installation
+  
+  ${installString}
+  `;
+}
+
+function generateUsage(usageString) {
+  return `
+  ##  Usage
+
+  ${usageString}
+  `;
+}
+
+function generateTests(testString) {
+  return `
+  ##  Tests
+
+  ${testString}
+  `;
+}
+
+function generateContributing(username) {
+  return `
+  ##  Contributing
+
+  - [${username}](https://github.com/${username}) 
+  `;
 }
 
 // TODO: Create a function to generate markdown for README
@@ -93,8 +126,17 @@ function generateMarkdown(data) {
 ${renderLicenseBadge(data.projLicense)}
 ${data.projDescription}
 ${renderTableOfContents()}
+
+${generateInstalltion(data.projInstall)}
+
+${generateUsage(data.projUsage)}
+
 ## License
 ${renderLicenseSection(data.projLicense)}
+
+${generateContributing(data.projUsername)}
+
+${generateTests(data.projTests)}
 
 ## Questions
 Github: [${data.projUsername}](https://github.com/${data.projUsername}) 
